@@ -38,23 +38,37 @@ void Help::GenerateView() {
 
 void Help::GetAnswer(int _answer) {
 
+	Storing _storing;
+	std::string location, filetype;
+
 	if (_answer == 1) {
 
+		std::cout << "Enter location: ";
+		std::cin >> location;
+		std::cout << "\n\n";
+		_storing.AutoStore(location);
 
 	}
 	else if (_answer == 2) {
 
-
+		std::cout << "Enter location: ";
+		std::cin >> location;
+		std::cout << "\nEnter file type: ";
+		std::cin >> filetype;
+		_storing.CustomStore(location, filetype);
 
 	}
 	else if (_answer == 3) {
 
-
+		_storing.SetDefaultStore();
 
 	}
 	else if (_answer == 4) {
 
-			
+		std::cout << "Enter location: ";
+		std::cin >> location;
+		std::cout << "\n\n";
+		_storing.UseDefaultStore(location);
 
 	}
 	else {
