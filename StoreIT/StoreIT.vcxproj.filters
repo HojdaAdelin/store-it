@@ -21,9 +21,15 @@
     <ClCompile Include="Help\Help.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Basics\AutoStore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Help\Help.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Basics\StoreFunctions.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

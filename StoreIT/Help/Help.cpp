@@ -55,12 +55,12 @@ void Help::GetAnswer(int _answer) {
 		std::cin >> location;
 		std::cout << "\nEnter file type: ";
 		std::cin >> filetype;
-		_storing.CustomStore(location, filetype);
+		//_storing.CustomStore(location, filetype);
 
 	}
 	else if (_answer == 3) {
 
-		_storing.SetDefaultStore();
+		//_storing.SetDefaultStore();
 
 	}
 	else if (_answer == 4) {
@@ -68,7 +68,7 @@ void Help::GetAnswer(int _answer) {
 		std::cout << "Enter location: ";
 		std::cin >> location;
 		std::cout << "\n\n";
-		_storing.UseDefaultStore(location);
+		//_storing.UseDefaultStore(location);
 
 	}
 	else {
