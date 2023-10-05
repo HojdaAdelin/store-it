@@ -3,8 +3,10 @@
 #include <Windows.h>
 
 #include "Help.h"
+#include "../Internal/Storing.h"
 
 HANDLE h_color = GetStdHandle(STD_OUTPUT_HANDLE);
+Storing storing;
 
 void Help::bracksColor(int _nr) {
 
@@ -44,7 +46,7 @@ void Help::GetAnswer(int _answer) {
 		std::cout << "Enter location: ";
 		std::cin >> location;
 		std::cout << "\n\n";
-		//_storing.AutoStore(location);
+		storing.AutoStore(location);
 
 	}
 	else if (_answer == 2) {
