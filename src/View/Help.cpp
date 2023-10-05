@@ -3,7 +3,6 @@
 #include <Windows.h>
 
 #include "Help.h"
-#include "../Basics/StoreFunctions.h"
 
 HANDLE h_color = GetStdHandle(STD_OUTPUT_HANDLE);
 
@@ -38,7 +37,6 @@ void Help::GenerateView() {
 
 void Help::GetAnswer(int _answer) {
 
-	Storing _storing;
 	std::string location, filetype;
 
 	if (_answer == 1) {
@@ -46,7 +44,7 @@ void Help::GetAnswer(int _answer) {
 		std::cout << "Enter location: ";
 		std::cin >> location;
 		std::cout << "\n\n";
-		_storing.AutoStore(location);
+		//_storing.AutoStore(location);
 
 	}
 	else if (_answer == 2) {
