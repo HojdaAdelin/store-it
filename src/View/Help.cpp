@@ -45,8 +45,9 @@ void Help::GetAnswer(int _answer) {
 
 		std::cout << "Enter location: ";
 		std::cin >> location;
-		std::cout << "\n\n";
+		std::cout << "\n";
 		storing.AutoStore(location);
+		std::cout << "\n";
 
 	}
 	else if (_answer == 2) {

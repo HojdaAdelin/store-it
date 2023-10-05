@@ -23,6 +23,7 @@ void Storing::AutoStore(std::string location) {
                     fs::copy(entry.path(), destinationFolder + "\\" + entry.path().filename().string());
 
                     std::cout << "Moved " << fileExtension << " file to " << destinationFolder << std::endl;
+                    fs::remove(entry.path());
                     break; 
                 }
             }
