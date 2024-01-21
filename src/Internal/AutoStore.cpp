@@ -8,8 +8,8 @@ namespace fs = std::filesystem;
 
 void Storing::AutoStore(std::string location) {
 
-    std::string extensions[7] = {"txt", "pdf", "cpp", "docs", "pdf", "py", "java"};
-    std::string folder_names[7] = {"TxtFolder", "PDFFolder", "CppFolder", "WordFolder", "PPFolder", "PyFolder", "JavaFolder"};
+    std::string extensions[8] = {"txt", "pdf", "cpp", "docs", "docx", "pdf", "py", "java"};
+    std::string folder_names[8] = {"TxtFolder", "PDFFolder", "CppFolder", "WordFolder", "WordFolder", "PPFolder", "PyFolder", "JavaFolder"};
 
     for (const auto& entry : fs::directory_iterator(location)) {
         if (entry.is_regular_file()) {

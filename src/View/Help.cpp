@@ -54,7 +54,7 @@ void Help::GetAnswer(int _answer) {
 
 		std::cout << "Enter location: ";
 		std::cin >> location;
-		std::cout << "\nEnter file type: ";
+		std::cout << "Enter file type: ";
 		std::cin >> filetype;
 		//_storing.CustomStore(location, filetype);
 
