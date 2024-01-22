@@ -28,12 +28,6 @@ void Help::GenerateView() {
 
 	bracksColor(1);
 	std::cout << "Auto store" << "\n";
-	bracksColor(2);
-	std::cout << "Custom store" << "\n";
-	bracksColor(3);
-	std::cout << "Set default store" << "\n";
-	bracksColor(4);
-	std::cout << "Use default store" << "\n\n";
 
 }
 
@@ -48,28 +42,6 @@ void Help::GetAnswer(int _answer) {
 		std::cout << "\n";
 		storing.AutoStore(location);
 		std::cout << "\n";
-
-	}
-	else if (_answer == 2) {
-
-		std::cout << "Enter location: ";
-		std::cin >> location;
-		std::cout << "Enter file type: ";
-		std::cin >> filetype;
-		//_storing.CustomStore(location, filetype);
-
-	}
-	else if (_answer == 3) {
-
-		//_storing.SetDefaultStore();
-
-	}
-	else if (_answer == 4) {
-
-		std::cout << "Enter location: ";
-		std::cin >> location;
-		std::cout << "\n\n";
-		//_storing.UseDefaultStore(location);
 
 	}
 	else {
